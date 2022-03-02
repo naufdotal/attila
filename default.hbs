@@ -32,31 +32,6 @@
 			}
 	</script>
 
-	{{#match @custom.color_scheme "Dark"}}
-		<script>localStorage.setItem('attila_theme', 'dark');</script>
-		<style>.js-theme {display:none!important;}</style>
-	{{/match}}
-
-	{{#match @custom.color_scheme "Light"}}
-		<script>localStorage.setItem('attila_theme', 'light');</script>
-		<style>.js-theme {display:none!important;}</style>
-	{{/match}}
-
-	{{#match @custom.color_scheme "!=" "Light"}}
-		{{#if @custom.darkmode_accent_color}}
-			<style>
-				.theme-dark:root {
-				  --ghost-accent-color: {{@custom.darkmode_accent_color}};
-				}
-				@media (prefers-color-scheme: dark) {
-				  html:not(.theme-light):root {
-				    --ghost-accent-color: {{@custom.darkmode_accent_color}};
-				  }
-				}
-			</style>
-		{{/if}}
-	{{/match}}
-
 	{{ghost_head}}
 </head>
 
@@ -112,7 +87,7 @@
 
 		<div class="nav-footer">
 			<nav class="nav-wrapper" aria-label="{{t "Footer"}}">
-				<span class="nav-copy">{{@site.title}} &copy; {{date format='YYYY'}}  <a class="nav-rss" title="RSS" href="{{@site.url}}/rss/" target="_blank"><i class="icon icon-rss" aria-hidden="true"></i></a></span>
+				<span class="nav-copy">Halal <a href="http://www.wtfpl.net/about/">License</a> •&nbsp;</span> 
 				{{#if @site.secondary_navigation}}
 				{{navigation type="secondary"}}
 				{{/if}}

@@ -52,7 +52,7 @@ textarea {
 	font-size: 1.75em;
 	line-height: 2em;
 
-	a:not([class]) {
+	a {
 		color: inherit;
 		text-decoration: none;
 		font-weight: 400;
@@ -339,13 +339,6 @@ textarea {
 		border: 1px solid var(--color-background-contrast);
 		background: var(--color-background-secondary);
 
-		@media (max-width: $breakpoint-medium) {
-			display: block;
-			border: none;
-			overflow-x: auto;
-			box-shadow: inset 0 0 0 1px var(--color-background-contrast);
-		}
-
 		td,
 		th {
 			position: relative;
@@ -519,57 +512,9 @@ textarea {
 			}
 		}
 	}
-
-	.kg-card {
-		margin: 0 0 4rem;
-	}
-
-	.kg-file-card {
-
-		.kg-file-card-container {
-			padding: 1.5rem;
-
-			.kg-file-card-icon {
-
-			}
-
-			.kg-file-card-contents {
-				margin: 0;
-
-				.kg-file-card-title {
-					font-size: 2rem;
-					line-height: 1.25em;
-				}
-
-				.kg-file-card-caption {
-					margin: 0.25rem 0 0;
-					font-size: 0.9em;
-					line-height: 1.25em;
-					opacity: inherit;
-					color: var(--color-content-secondary);
-				}
-
-				.kg-file-card-metadata {
-					margin: 1.5rem 0 0;
-
-					.kg-file-card-filename {
-						display: inline-block;
-						line-height: inherit;
-					}
-					.kg-file-card-filesize {
-						display: inline-block;
-						font-size: 0.9em;
-						line-height: inherit;
-						opacity: inherit;
-						color: var(--color-content-secondary);
-					}
-				}
-			}
-		}
-	}
-
 	// KG Image
 	.kg-image-card {
+		margin: 0 0 4rem;
 		max-width: none !important;
 
 		&.kg-width-wide {
@@ -626,6 +571,7 @@ textarea {
 	}
 	// KG Gallery
 	.kg-gallery-card {
+		margin: 0 0 4rem;
 		max-width: calc(72rem + 24vw) !important;
 		min-width: 100%;
 		width: calc(100vw - 4rem);
@@ -684,6 +630,7 @@ textarea {
 	// KG Code
 	.kg-code-card {
 		min-width: 100%;
+		margin: 0 0 4rem;
 	}
 
 	.kg-code-card pre {
@@ -692,6 +639,7 @@ textarea {
 	// KG Bookmark
 	.kg-bookmark-card {
 		width: 100%;
+		margin: 0 0 4rem;
 	}
 
 	.kg-bookmark-container {
@@ -1312,7 +1260,6 @@ textarea {
 				-webkit-box-orient: vertical;
 				overflow: hidden;
 				text-overflow: ellipsis;
-				display: none; //Temporary until fixed
 			}
 		}
 	}
@@ -2324,7 +2271,6 @@ textarea {
    Post Comments
    ========================================================================== */
 .post-comments {
-	display: none;
 	position: relative;
 	padding: 4rem;
 	text-align: center;

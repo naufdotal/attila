@@ -12,9 +12,8 @@ Maintaining this project takes a lot of time. You can [buy me a drink](https://p
 
 ## ⭐️ Features
 
-* Theme options
 * Responsive layout
-* Light and Dark Mode
+* Dark Mode & Theme Switch
 * Search & Popular Tags
 * Post reading progress
 * Code highlight including line numbers
@@ -37,7 +36,7 @@ Maintaining this project takes a lot of time. You can [buy me a drink](https://p
 | `zh` | 🇨🇳 | Chinese | 🟩 | [hao-lee](https://github.com/hao-lee), [izumiko](https://github.com/izumiko), [emperorjoker](https://github.com/emperorjoker) |
 | `id` | 🇮🇩 | Indonesian | 🟧 | [simplyeazy](https://github.com/simplyeazy) |
 | `ro` | 🇷🇴 | Romanian | 🟧 | [cdorin93](https://github.com/cdorin93) |
-| `ru` | 🇷🇺 | Russian | 🟩 | [schamberg97](https://github.com/schamberg97), [atjanov](https://github.com/atjanov) |
+| `ru` | 🇷🇺 | Russian | 🟧 | [schamberg97](https://github.com/schamberg97) |
 | `tr` | 🇹🇷 | Turkish | 🟩 | [cgrgrbz](https://github.com/cgrgrbz), [electricalgorithm](https://github.com/electricalgorithm) |
 | `sv` | 🇸🇪 | Swedish | 🟧 | [martenj77](https://github.com/martenj77) |
 | `cs` | 🇨🇿 | Czech | 🟧 | [lunakv](https://github.com/lunakv) |
@@ -77,6 +76,24 @@ Maintaining this project takes a lot of time. You can [buy me a drink](https://p
   }
 </style>
 ````
+## 🌓 Force Light/Dark Mode
+
+1. Go to __Code injection__.  
+2. Decide for `light` or `dark`.
+3. Add this to __Blog Header__:
+
+````html
+<script>localStorage.setItem('attila_theme', 'dark');</script>
+<style>.js-theme {display:none!important;}</style>
+````
+
+## 💬 Setup [Disqus](https://disqus.com/)
+
+1. Go to __Code injection__.  
+2. Add this to __Blog Header__:  
+````html
+<script>var disqus = 'YOUR_DISQUS_SHORTNAME';</script>
+````
 
 ## 🔍 Setup search
 
@@ -110,4 +127,4 @@ grunt compress
 ````
 ## ⚖️ Copyright & License
 
-Copyright (C) 2015-2022 Peter Amende - Released under the [MIT License](https://github.com/zutrinken/attila/blob/master/LICENSE).
+Copyright (C) 2015-2021 Peter Amende - Released under the [MIT License](https://github.com/zutrinken/attila/blob/master/LICENSE).

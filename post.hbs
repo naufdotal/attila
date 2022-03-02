@@ -121,8 +121,10 @@
 				{{/prev_post}}
 				<div class="clear"></div>
 			</aside>
-
-		</div>
+<div style="margin: 5rem 0 2rem;">
+<script async src="https://comments.app/js/widget.js?3" data-comments-app-website="WEhwKr7-" data-limit="5" data-color="F95C54" data-outlined="1" data-dark="1"></script>
+</div>	
+</div>
 	</article>
 </main>
 
@@ -179,12 +181,13 @@
 	      readingProgress();
 	    }
 	  });
-
-		{{#if @custom.disqus_shortname}}
-			$('.post-comments').css({
-				'display': 'block'
-			});
-			var disqus = '{{@custom.disqus_shortname}}';
+		// Check if disqus is defined by code injection
+		if (typeof disqus === 'undefined') {
+			// hide comment section
+	    $('.post-comments').css({
+	      'display': 'none'
+	    });
+	  } else {
 	    $('#show-disqus').on('click', function() {
 	      $.ajax({
 	        type: "GET",
@@ -194,7 +197,7 @@
 	      });
 	      $(this).parent().addClass('activated');
 	    });
-		{{/if}}
+	  }
   });
 </script>
 {{/contentFor}}
