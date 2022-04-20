@@ -1,6 +1,7 @@
 # Attila for [ariq.nauf.al/blog](https://ariq.nauf.al/blog)
 
-A content focused responsive theme for [Ghost](https://github.com/tryghost/ghost/). See a demo at: [attila.peteramende.de](https://attila.peteramende.de/)
+A content focused responsive theme for [Ghost](https://github.com/tryghost/ghost/). See a demo at: [attila.peteramende.de](https://attila.peteramende.de/).
+
 Exclusively edited for [ariq.nauf.al/blog](https://ariq.nauf.al/blog)
 
 ## ♥️ Support Attila Theme
