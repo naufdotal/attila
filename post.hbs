@@ -81,9 +81,11 @@
 			</section>
 
 
-			<section class="post-comments">
-				<a id="show-disqus" class="post-comments-activate">{{t "Show Comments"}}</a>
-			   <div id="disqus_thread"></div>
+			<section class="comments-custom">
+			   <div style="margin: 5rem 0 2rem;">
+<script async src="https://comments.app/js/widget.js?3" data-comments-app-website="WEhwKr7-" data-limit="5" data-color="F95C54" data-outlined="1" data-dark="1"></script>
+</div>	
+
 			</section>
 
       {{#if @labs.subscribers}}
@@ -121,9 +123,6 @@
 				{{/prev_post}}
 				<div class="clear"></div>
 			</aside>
-<div style="margin: 5rem 0 2rem;">
-<script async src="https://comments.app/js/widget.js?3" data-comments-app-website="WEhwKr7-" data-limit="5" data-color="F95C54" data-outlined="1" data-dark="1"></script>
-</div>	
 </div>
 	</article>
 </main>
@@ -136,8 +135,6 @@
   $(document).ready(function () {
 		var viewport = $(window);
 		var post = $('.post-content');
-		// Responsive videos with fitVids
-    post.fitVids();
 		// Format code blocks and add line numbers
 		function codestyling() {
 	    $('pre code').each(function(i, e) {
