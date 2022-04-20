@@ -712,7 +712,6 @@ textarea {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-left: 0.25em solid var(--ghost-accent-color);
-  font-style: italic;
   font-weight: 400;
 }
 .post-content blockquote * {
